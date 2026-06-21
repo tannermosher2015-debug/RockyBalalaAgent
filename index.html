@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rocky Balala — Maui Real Estate Agent | Island Wide Realty, Wailuku</title>
+<meta name="description" content="Rocky Balala is a Wailuku-based real estate agent with Island Wide Realty, helping island families and newcomers buy and sell across Maui — Kahului, Kīhei, Lahaina, Wailea and beyond. Licensed R(S) RS-82410." />
+<meta name="theme-color" content="#0F2438" />
+<link rel="canonical" href="https://rockybalala.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rocky Balala — Maui Real Estate Agent" />
+<meta property="og:description" content="A Wailuku-based Maui agent who picks up the phone. Buying and selling island-wide with Island Wide Realty." />
+<meta property="og:image" content="https://rockybalala.com/images/og-rocky-balala.jpg" />
+<meta property="og:url" content="https://rockybalala.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon: gold "RB" monogram, inline so the site stays self-contained -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2438'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23C8923F'%3ERB%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts: Cormorant Garamond (display serif) · Jost (sans) · Pinyon Script (signature) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" /></noscript>
+
+<!-- Structured data: a real RealEstateAgent profile (authentic SEO signal) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Rocky Balala",
+  "jobTitle": "Real Estate Agent, R(S)",
+  "telephone": "+1-808-283-1800",
+  "email": "waenagroup@gmail.com",
+  "image": "https://rockybalala.com/images/rocky-balala.jpg",
+  "url": "https://rockybalala.com/",
+  "memberOf": { "@type": "RealEstateOrganization", "name": "Island Wide Realty" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1371 Lower Main St., #1",
+    "addressLocality": "Wailuku",
+    "addressRegion": "HI",
+    "postalCode": "96793",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Wailuku","Kahului","Kīhei","Lahaina","Wailea","Pukalani","Hāna","Maui County, HI"],
+  "identifier": { "@type": "PropertyValue", "propertyID": "HI License", "value": "RS-82410" }
+}
+</script>
+
+<style>
+  /* ============ TOKENS ============ */
+  :root{
+    --navy:#0F2438;        /* background — deep ocean navy */
+    --navy-2:#16344E;      /* layered surface / borders on dark */
+    --navy-3:#0A1A29;      /* deepest — footer */
+    --cream:#F8F2E8;       /* surface — warm cream */
+    --cream-2:#FCF8F1;     /* lighter cream for raised cards */
+    --gold:#C8923F;        /* primary accent — gold (AA-safe on navy) */
+    --gold-soft:#E2B873;   /* gold highlight on dark */
+    --gold-deep:#8A5A1E;   /* gold TEXT on cream (AA-safe) */
+    --ink:#211D17;         /* text on cream */
+    --ink-muted:#5A5345;   /* muted text on cream (≥4.5:1) */
+    --cream-text:#F4ECDD;  /* text on navy */
+    --cream-muted:#C7BDA9; /* muted text on navy (≥4.5:1) */
+
+    --maxw:1200px;
+    --pad-x:clamp(1.25rem, 5vw, 4rem);
+    --section-y:clamp(4.5rem, 10vw, 8rem);
+    --radius:14px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --shadow:0 24px 60px -28px rgba(10,26,41,.55);
+    --shadow-card:0 18px 44px -26px rgba(10,26,41,.40);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+
+  body{
+    margin:0;
+    font-family:'Jost',system-ui,sans-serif;
+    font-weight:400;
+    font-size:clamp(1rem,1.05vw + .85rem,1.125rem);
+    line-height:1.72;
+    color:var(--ink);
+    background:var(--cream);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  /* ============ TYPE ============ */
+  .display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.04;letter-spacing:.005em;}
+  h1.display{font-size:clamp(2.7rem,6.2vw,5.25rem);}
+  h2.display{font-size:clamp(2.1rem,4.4vw,3.4rem);margin:0 0 .35em;}
+  h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(1.35rem,2.4vw,1.8rem);line-height:1.12;margin:0 0 .4em;}
+  .script{font-family:'Pinyon Script',cursive;font-weight:400;line-height:1;}
+  .eyebrow{
+    font-family:'Pinyon Script',cursive;
+    font-size:clamp(1.7rem,3vw,2.5rem);
+    color:var(--gold-deep);
+    margin:0 0 .15em;
+  }
+  .eyebrow.on-navy{color:var(--gold-soft);}
+  .kicker{
+    font-family:'Jost',sans-serif;font-weight:500;
+    text-transform:uppercase;letter-spacing:.22em;
+    font-size:.72rem;color:var(--gold-deep);
+  }
+  .kicker.on-navy{color:var(--gold);}
+  .lead{font-size:clamp(1.1rem,1.4vw,1.3rem);line-height:1.6;}
+
+  /* ============ LAYOUT ============ */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad-x);}
+  section{padding-block:var(--section-y);}
+  .navy{background:var(--navy);color:var(--cream-text);}
+  .navy h2.display,.navy h3{color:#fff;}
+  .navy p{color:var(--cream-muted);}
+  .cream{background:var(--cream);}
+
+  /* horizon-arc divider (the recurring motif) */
+  .horizon{display:block;width:130px;height:18px;margin:1.4rem 0 1.6rem;overflow:visible;}
+  .horizon.center{margin-inline:auto;}
+  .horizon path{fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;}
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;
+    font-family:'Jost',sans-serif;font-weight:500;
+    text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;
+    padding:1.05em 1.9em;border-radius:50px;border:1.5px solid transparent;
+    text-decoration:none;cursor:pointer;transition:transform .35s var(--ease),background .35s var(--ease),color .35s var(--ease),box-shadow .35s var(--ease);
+  }
+  .btn-gold{background:var(--gold);color:#211207;box-shadow:0 12px 30px -14px rgba(200,146,63,.7);}
+  .btn-gold:hover{background:var(--gold-soft);transform:translateY(-3px);}
+  .btn-ghost{border-color:rgba(244,236,221,.45);color:var(--cream-text);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-soft);transform:translateY(-3px);}
+  .btn-ghost-dark{border-color:rgba(33,29,23,.3);color:var(--ink);}
+  .btn-ghost-dark:hover{border-color:var(--gold-deep);color:var(--gold-deep);transform:translateY(-3px);}
+  .btn .arrow{transition:transform .35s var(--ease);}
+  .btn:hover .arrow{transform:translateX(4px);}
+
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px;}
+
+  /* skip link */
+  .skip{position:absolute;left:50%;top:-60px;transform:translateX(-50%);background:var(--gold);color:#211207;
+    padding:.7em 1.4em;border-radius:0 0 10px 10px;font-weight:600;letter-spacing:.05em;z-index:200;transition:top .2s;}
+  .skip:focus{top:0;}
+
+  /* ============ HEADER ============ */
+  header.site{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;padding:1.15rem var(--pad-x);
+    transition:background .4s var(--ease),padding .4s var(--ease),box-shadow .4s var(--ease);
+  }
+  header.site.scrolled{background:rgba(15,36,56,.92);backdrop-filter:blur(10px);padding-block:.7rem;box-shadow:0 10px 30px -18px rgba(0,0,0,.6);}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff;}
+  .seal{width:42px;height:42px;flex:none;}
+  .brand .name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.22rem;line-height:1;letter-spacing:.02em;color:#fff;}
+  .brand .sub{display:block;font-family:'Jost',sans-serif;font-weight:400;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-soft);margin-top:.32em;}
+
+  nav.primary{display:flex;align-items:center;gap:1.6rem;}
+  nav.primary a{
+    font-family:'Jost',sans-serif;font-weight:400;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--cream-text);text-decoration:none;position:relative;padding:.3em 0;transition:color .3s;
+  }
+  nav.primary a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--gold);transition:width .3s var(--ease);}
+  nav.primary a:hover,nav.primary a:focus-visible{color:#fff;}
+  nav.primary a:hover::after,nav.primary a:focus-visible::after{width:100%;}
+  .header-cta{display:inline-flex;}
+
+  .menu-btn{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px;z-index:120;}
+  .menu-btn span{width:26px;height:2px;background:var(--cream-text);transition:transform .35s var(--ease),opacity .25s;}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ============ HERO ============ */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--navy);}
+  .hero-scene{position:absolute;inset:0;z-index:0;}
+  .hero-scene svg{width:100%;height:100%;}
+  .hero-veil{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(100deg,rgba(10,22,33,.94) 0%,rgba(15,36,56,.78) 42%,rgba(15,36,56,.30) 70%,rgba(15,36,56,.55) 100%);}
+  .hero .wrap{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;padding-top:6rem;padding-bottom:3rem;}
+  .hero-copy{max-width:36ch;}
+  .hero h1{color:#fff;margin:.1em 0 .5em;}
+  .hero h1 em{font-style:italic;color:var(--gold-soft);}
+  .hero .lead{color:var(--cream-text);max-width:42ch;margin:0 0 2rem;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.6rem;}
+  .proof{display:flex;flex-wrap:wrap;gap:1.4rem 2rem;border-top:1px solid rgba(244,236,221,.16);padding-top:1.5rem;}
+  .proof li{list-style:none;display:flex;align-items:center;gap:.6rem;font-size:.82rem;letter-spacing:.04em;color:var(--cream-text);max-width:16ch;}
+  .proof svg{width:22px;height:22px;flex:none;stroke:var(--gold);}
+  .hero ul{margin:0;padding:0;}
+
+  /* portrait frame (motif: gold-ringed circle) */
+  .portrait{position:relative;justify-self:center;width:min(360px,80%);aspect-ratio:1;}
+  .portrait .ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);transform:rotate(-4deg);}
+  .portrait .ring.two{inset:14px;border-color:rgba(200,146,63,.35);transform:rotate(3deg);}
+  .portrait .photo{position:absolute;inset:22px;border-radius:50%;overflow:hidden;
+    background:radial-gradient(circle at 50% 30%,var(--navy-2),var(--navy-3));
+    display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:var(--shadow);}
+  .portrait .mono{font-family:'Cormorant Garamond',serif;font-size:4.6rem;font-weight:600;color:var(--gold-soft);line-height:1;}
+  .portrait .ph-label{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-muted);margin-top:.6rem;}
+  .portrait .badge{position:absolute;right:-6px;bottom:14px;width:96px;height:96px;border-radius:50%;
+    background:var(--gold);color:#211207;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    box-shadow:0 16px 34px -14px rgba(200,146,63,.8);transform:rotate(-8deg);}
+  .portrait .badge .b1{font-family:'Pinyon Script',cursive;font-size:1.45rem;line-height:.8;}
+  .portrait .badge .b2{font-family:'Jost',sans-serif;font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;margin-top:.25em;font-weight:600;}
+
+  /* ============ ABOUT ============ */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;}
+  .about-portrait{position:relative;width:min(420px,100%);aspect-ratio:4/5;justify-self:center;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;
+    border:1px solid rgba(200,146,63,.4);box-shadow:var(--shadow);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--cream-muted);text-align:center;}
+  .about-portrait .ap-scene{position:absolute;inset:0;width:100%;height:100%;}
+  .about-portrait .ap-seal{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;}
+  .about-portrait .mono{font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--gold-soft);line-height:1;text-shadow:0 6px 24px rgba(10,26,41,.6);}
+  .about-portrait .ap-sub{font-family:'Pinyon Script',cursive;font-size:1.5rem;color:var(--cream-text);margin-top:.2rem;}
+  .about p{margin:0 0 1.1em;}
+  .about p.muted{color:var(--ink-muted);}
+  .creds{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(33,29,23,.12);border:1px solid rgba(33,29,23,.12);border-radius:var(--radius);overflow:hidden;margin-top:2rem;}
+  .creds div{background:var(--cream-2);padding:1.1rem 1.3rem;}
+  .creds .c-top{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--gold-deep);line-height:1;}
+  .creds .c-sub{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-muted);margin-top:.4em;}
+
+  /* ============ SERVICES ============ */
+  .svc-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:2.6rem;}
+  .svc{position:relative;background:var(--navy-2);border:1px solid rgba(200,146,63,.18);border-radius:var(--radius);padding:2.2rem 2rem 2rem;transition:transform .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease);}
+  .svc:hover{transform:translateY(-6px);border-color:var(--gold);background:#1a3c58;}
+  .svc .num{position:absolute;top:1.4rem;right:1.6rem;font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:rgba(200,146,63,.32);line-height:1;}
+  .svc .ic{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;}
+  .svc .ic svg{width:26px;height:26px;stroke:var(--gold);}
+  .svc h3{color:#fff;}
+  .svc p{color:var(--cream-muted);font-size:.96rem;margin:0;}
+
+  /* ============ LISTINGS ============ */
+  .note{font-size:.84rem;letter-spacing:.04em;color:var(--ink-muted);font-style:italic;margin-top:.4rem;}
+  .listings{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.6rem;}
+  .listing{border-radius:var(--radius);overflow:hidden;background:var(--cream-2);box-shadow:var(--shadow-card);transition:transform .4s var(--ease),box-shadow .4s var(--ease);}
+  .listing:hover{transform:translateY(-6px);box-shadow:0 28px 60px -28px rgba(10,26,41,.5);}
+  .listing .img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--navy);display:flex;align-items:center;justify-content:center;color:var(--cream-muted);}
+  .listing .img > svg{position:absolute;inset:0;width:100%;height:100%;}
+  .listing .tag{position:absolute;top:1rem;left:1rem;background:var(--gold);color:#211207;font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:.4em .9em;border-radius:40px;}
+  .listing .tag.sold{background:var(--navy);color:var(--gold-soft);border:1px solid var(--gold);}
+  .listing .body{padding:1.4rem 1.5rem 1.7rem;}
+  .listing .place{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1.1;}
+  .listing .meta{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-muted);margin:.5rem 0 .9rem;}
+  .listing .price{font-family:'Jost',sans-serif;font-weight:600;font-size:1.05rem;color:var(--gold-deep);}
+
+  /* ============ PROMISE ============ */
+  .promise-intro{max-width:58ch;margin:0 auto;color:var(--cream-muted);}
+  .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin:2.8rem 0 0;text-align:left;}
+  .promise{position:relative;background:var(--navy-2);border:1px solid rgba(200,146,63,.18);border-radius:var(--radius);padding:2.1rem 1.9rem;transition:transform .4s var(--ease),border-color .4s var(--ease);}
+  .promise:hover{transform:translateY(-6px);border-color:var(--gold);}
+  .promise .p-num{font-family:'Pinyon Script',cursive;font-size:2.4rem;color:var(--gold-soft);display:block;line-height:1;margin-bottom:.5rem;}
+  .promise h3{color:#fff;margin-bottom:.5rem;}
+  .promise p{color:var(--cream-muted);font-size:.95rem;margin:0;}
+  .review-invite{margin:2.6rem 0 0;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-muted);}
+
+  /* ============ FAQ ============ */
+  .faq{max-width:820px;margin:2.4rem auto 0;}
+  .faq details{border-bottom:1px solid rgba(33,29,23,.14);}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+    padding:1.35rem .2rem;font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2vw,1.5rem);font-weight:600;color:var(--ink);}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .pm{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--gold-deep);position:relative;transition:background .3s;}
+  .faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;background:var(--gold-deep);left:50%;top:50%;transform:translate(-50%,-50%);transition:opacity .3s,transform .3s;}
+  .faq summary .pm::before{width:11px;height:1.6px;}
+  .faq summary .pm::after{width:1.6px;height:11px;}
+  .faq details[open] summary .pm::after{opacity:0;}
+  .faq details[open] summary .pm{background:rgba(200,146,63,.14);}
+  .faq .ans{padding:0 .2rem 1.5rem;color:var(--ink-muted);max-width:64ch;}
+
+  /* ============ CONTACT ============ */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start;}
+  .contact-info p{margin:.2em 0 1.4em;color:var(--cream-muted);}
+  .contact-lines{list-style:none;margin:1.8rem 0 0;padding:0;display:grid;gap:1.2rem;}
+  .contact-lines li{display:flex;gap:1rem;align-items:flex-start;}
+  .contact-lines .ic{width:44px;height:44px;flex:none;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;}
+  .contact-lines .ic svg{width:20px;height:20px;stroke:var(--gold);}
+  .contact-lines .lbl{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);}
+  .contact-lines a,.contact-lines .val{color:#fff;text-decoration:none;font-size:1.05rem;}
+  .contact-lines a:hover{color:var(--gold-soft);}
+
+  form{background:var(--cream-2);border-radius:var(--radius);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--shadow);}
+  .field{margin-bottom:1.2rem;}
+  label{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:.5rem;font-weight:500;}
+  input,textarea{width:100%;font-family:'Jost',sans-serif;font-size:1rem;color:var(--ink);background:#fff;border:1px solid rgba(33,29,23,.2);border-radius:9px;padding:.85rem 1rem;transition:border-color .25s,box-shadow .25s;}
+  input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,146,63,.22);}
+  textarea{resize:vertical;min-height:130px;}
+  .form-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+  .hp{position:absolute;left:-9999px;}
+
+  /* ============ FOOTER ============ */
+  footer.site{background:var(--navy-3);color:var(--cream-muted);padding:clamp(3rem,6vw,4.5rem) 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;}
+  .foot-grid h4{font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);margin:0 0 1.2rem;}
+  .foot-grid a{color:var(--cream-muted);text-decoration:none;display:block;margin-bottom:.6rem;font-size:.92rem;}
+  .foot-grid a:hover{color:#fff;}
+  .foot-brand .name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#fff;}
+  .foot-brand p{font-size:.9rem;margin:.8rem 0 0;max-width:34ch;}
+  .eho{display:flex;align-items:center;gap:.6rem;margin-top:1.4rem;font-size:.72rem;color:var(--cream-muted);}
+  .eho svg{width:26px;height:26px;flex:none;stroke:var(--cream-muted);}
+  .foot-bottom{border-top:1px solid rgba(244,236,221,.12);margin-top:2.6rem;padding-top:1.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.78rem;letter-spacing:.04em;}
+  .foot-bottom a{color:var(--gold-soft);text-decoration:none;}
+
+  /* ============ MOBILE QUICK-ACTION BAR (phone-only decision) ============ */
+  .mobile-bar{display:none;}
+  @media (max-width:640px){
+    .mobile-bar{
+      display:grid;grid-template-columns:1fr 1fr;gap:.6rem;
+      position:fixed;left:0;right:0;bottom:0;z-index:90;
+      padding:.65rem .8rem calc(.65rem + env(safe-area-inset-bottom));
+      background:rgba(10,22,33,.96);backdrop-filter:blur(10px);
+      border-top:1px solid rgba(200,146,63,.3);
+    }
+    .mb-btn{display:flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;border-radius:50px;
+      font-family:'Jost',sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;}
+    .mb-btn svg{width:18px;height:18px;flex:none;}
+    .mb-btn.call{background:var(--gold);color:#211207;}
+    .mb-btn.call svg{stroke:#211207;}
+    .mb-btn.email{background:transparent;color:var(--cream-text);border:1.5px solid rgba(244,236,221,.4);}
+    .mb-btn.email svg{stroke:var(--cream-text);}
+    footer.site{padding-bottom:6rem;}
+  }
+
+  /* ============ MOTION ============ */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease);will-change:opacity,transform;}
+  .reveal.in{opacity:1;transform:none;}
+  .reveal.d1{transition-delay:.1s;}
+  .reveal.d2{transition-delay:.2s;}
+  .reveal.d3{transition-delay:.3s;}
+  /* motif draws itself: the gold horizon-arc strokes in when its section arrives */
+  .horizon path{stroke-dasharray:200;stroke-dashoffset:200;transition:stroke-dashoffset 1.1s var(--ease) .12s;}
+  .horizon.drawn path{stroke-dashoffset:0;}
+  /* hero's gold arc draws on load; the dusk glow drifts so the scene breathes */
+  .hero-arc{stroke-dasharray:1300;stroke-dashoffset:1300;animation:draw 2.6s var(--ease) .4s forwards;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .hero-glow{animation:drift 16s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center;}
+  @keyframes drift{from{transform:translate(0,0)}to{transform:translate(-22px,-14px)}}
+  .listing .img svg{transition:transform .7s var(--ease);}
+  .listing:hover .img svg{transform:scale(1.05);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1!important;transform:none!important;transition:none!important;}
+    .horizon path{stroke-dashoffset:0!important;transition:none!important;}
+    .hero-arc{animation:none!important;stroke-dashoffset:0!important;}
+    .hero-glow{animation:none!important;}
+    .btn:hover,.svc:hover,.listing:hover,.listing:hover .img svg{transform:none!important;}
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;gap:2.5rem;}
+    .portrait{order:-1;width:min(300px,70%);}
+    .about-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .svc-list{grid-template-columns:1fr;}
+    .listings{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:900px){
+    .header-cta{display:none;}
+    .menu-btn{display:flex;}
+    nav.primary{position:fixed;inset:0;flex-direction:column;justify-content:center;gap:2rem;
+      background:rgba(10,22,33,.98);backdrop-filter:blur(8px);
+      transform:translateX(100%);transition:transform .45s var(--ease);}
+    nav.primary.open{transform:none;}
+    nav.primary a{font-size:1.1rem;letter-spacing:.18em;padding:.7rem 1.2rem;}
+    .creds{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .promise-grid{grid-template-columns:1fr;}
+    section{padding-block:clamp(3.2rem,12vw,4.5rem);}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site" id="siteHeader">
+  <a class="brand" href="#top" aria-label="Rocky Balala — home">
+    <svg class="seal" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" fill="none" stroke="#C8923F" stroke-width="1.5"/>
+      <path d="M11 30 q13 -12 26 0" fill="none" stroke="#C8923F" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="24" y="23" font-family="Cormorant Garamond,serif" font-size="17" font-weight="700" text-anchor="middle" fill="#F4ECDD">RB</text>
+    </svg>
+    <span>
+      <span class="name">Rocky Balala</span>
+      <span class="sub">Maui Real Estate · R(S)</span>
+    </span>
+  </a>
+
+  <nav class="primary" id="primaryNav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#listings">Listings</a>
+    <a href="#testimonials">Promise</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a class="btn btn-gold header-cta" href="#contact">Get in touch</a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
+  <!--
+    HERO PHOTO TO COMMISSION: a full-bleed twilight shot of a Maui home / property
+    with the West Maui Mountains or ocean horizon behind it. Recommended 2400×1600,
+    warm dusk light, navy/gold tones. Drop in as the .hero-scene background image and
+    keep the .hero-veil gradient for text legibility. Until then, the designed
+    twilight-ridge scene below stands in.
+  -->
+  <div class="hero-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A1A29"/>
+          <stop offset="55%" stop-color="#13304A"/>
+          <stop offset="100%" stop-color="#1B4063"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="72%" cy="62%" r="38%">
+          <stop offset="0" stop-color="#C8923F" stop-opacity=".55"/>
+          <stop offset="100%" stop-color="#C8923F" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#sky)"/>
+      <g class="hero-glow">
+        <circle cx="1040" cy="560" r="320" fill="url(#glow)"/>
+        <circle cx="1040" cy="540" r="74" fill="#E2B873" opacity=".9"/>
+      </g>
+      <!-- layered Maui ridgelines -->
+      <path d="M0 620 Q260 520 520 590 T1040 560 T1440 600 V900 H0 Z" fill="#16344E" opacity=".9"/>
+      <path d="M0 700 Q320 600 640 670 T1200 650 T1440 690 V900 H0 Z" fill="#0F2438"/>
+      <path d="M0 790 Q360 720 760 770 T1440 760 V900 H0 Z" fill="#0A1A29"/>
+      <!-- gold horizon arc motif (draws in on load) -->
+      <path class="hero-arc" d="M120 528 Q720 470 1320 528" fill="none" stroke="#C8923F" stroke-width="1.4" opacity=".55"/>
+    </svg>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-copy reveal">
+      <p class="eyebrow on-navy">Aloha — I'm Rocky</p>
+      <h1 class="display">Maui homes, in <em>trusted</em> local hands.</h1>
+      <p class="lead">I'm a Wailuku-based agent with Island Wide Realty, helping island families and newcomers buy and sell across Maui — from Kahului to Wailea, Lahaina to Hāna.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#listings">See Maui listings</a>
+      </div>
+      <ul class="proof">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-5.2-7-10a7 7 0 0 1 14 0c0 4.8-7 10-7 10Z" stroke-width="1.6"/><circle cx="12" cy="11" r="2.4" stroke-width="1.6"/></svg>
+          Island-wide local knowledge
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Straight answers, quick callbacks
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 16.3 7.2 18.7l.9-5.4L4.2 9.5l5.4-.8L12 3Z" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          Licensed R(S) — RS-82410
+        </li>
+      </ul>
+    </div>
+
+    <!-- Agent portrait (motif: gold-ringed circle) -->
+    <div class="portrait reveal d2">
+      <!-- HEADSHOT TO ADD: Rocky's professional headshot, ~720×720, square, warm light.
+           Replace the .photo block's monogram with <img alt="Rocky Balala, Maui real estate agent"> -->
+      <div class="ring" aria-hidden="true"></div>
+      <div class="ring two" aria-hidden="true"></div>
+      <div class="photo">
+        <span class="mono" aria-hidden="true">RB</span>
+        <span class="ph-label">Rocky Balala · R(S)</span>
+      </div>
+      <div class="badge" aria-hidden="true">
+        <span class="b1">Maui</span>
+        <span class="b2">Born &amp; based</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="cream about" id="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+    <div class="about-portrait reveal" aria-hidden="true">
+      <!-- ABOUT PHOTO TO ADD: a relaxed on-location portrait of Rocky (~720×900 portrait);
+           drop in as an <img> filling this frame and remove the .ap-scene/.ap-seal stand-in. -->
+      <svg class="ap-scene" viewBox="0 0 420 525" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="apsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#13304A"/>
+            <stop offset="60%" stop-color="#0F2438"/>
+            <stop offset="100%" stop-color="#0A1A29"/>
+          </linearGradient>
+          <radialGradient id="apsun" cx="50%" cy="46%" r="34%">
+            <stop offset="0" stop-color="#C8923F" stop-opacity=".5"/>
+            <stop offset="100%" stop-color="#C8923F" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="420" height="525" fill="url(#apsky)"/>
+        <circle cx="210" cy="250" r="150" fill="url(#apsun)"/>
+        <circle cx="210" cy="232" r="34" fill="#E2B873" opacity=".85"/>
+        <!-- ʻĪao-valley ridgelines -->
+        <path d="M0 300 L150 150 L210 250 L270 150 L420 300 V525 H0 Z" fill="#16344E" opacity=".85"/>
+        <path d="M0 350 Q120 280 210 330 T420 360 V525 H0 Z" fill="#0F2438"/>
+        <path d="M0 420 Q140 360 280 410 T420 430 V525 H0 Z" fill="#0A1A29"/>
+        <path d="M40 312 Q210 250 380 312" fill="none" stroke="#C8923F" stroke-width="1.2" opacity=".5"/>
+      </svg>
+      <span class="ap-seal">
+        <span class="mono">RB</span>
+        <span class="ap-sub">on Maui</span>
+      </span>
+    </div>
+    <div class="reveal d1">
+      <p class="eyebrow">About Rocky</p>
+      <h2 class="display" id="about-h">A Maui agent who picks up the phone.</h2>
+      <svg class="horizon" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+      <p>Real estate on Maui isn't a numbers game to me — it's neighbors, families, and the island I call home. I work out of Wailuku with Island Wide Realty, and I know Maui the way you only can by living here: which Kahului streets sit in a flood zone, what a fair Kīhei price really looks like, how long a Wailea escrow actually takes.</p>
+      <p class="muted">Whether you're buying your first home, selling the one you raised a family in, or moving to Maui from off-island, you get one agent who answers, explains, and tells you the truth — even when it isn't what closes the fastest deal.</p>
+      <div class="creds">
+        <div><div class="c-top">Wailuku</div><div class="c-sub">Based on-island</div></div>
+        <div><div class="c-top">Island Wide</div><div class="c-sub">Realty brokerage</div></div>
+        <div><div class="c-top">RS-82410</div><div class="c-sub">Licensed R(S)</div></div>
+        <div><div class="c-top">All Maui</div><div class="c-sub">Buyers &amp; sellers</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="navy" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="reveal" style="max-width:48ch">
+      <p class="eyebrow on-navy">How I help</p>
+      <h2 class="display" id="svc-h">Let's work together.</h2>
+      <svg class="horizon" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+      <p>Four ways I show up for Maui buyers and sellers — each one hands-on, honest, and built around your timeline, not mine.</p>
+    </div>
+    <div class="svc-list">
+      <article class="svc reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-6 8 6M6 10v9h12v-9" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19v-5h4v5" stroke-width="1.6"/></svg></div>
+        <h3>Buying on Maui</h3>
+        <p>From the first showing to keys in hand, I help you find the right home at the right price — and walk you through every island-specific step, from fee-simple vs. leasehold to flood zones and CPR units.</p>
+      </article>
+      <article class="svc reveal d1">
+        <span class="num" aria-hidden="true">02</span>
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M7 20V9l5-4 5 4v11" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 20v-5" stroke-width="1.6"/></svg></div>
+        <h3>Selling your home</h3>
+        <p>Honest pricing, real prep advice, and marketing that reaches actual Maui buyers — so your home sells for what it's worth, not just what's easy to list.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num" aria-hidden="true">03</span>
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3a8 8 0 0 0 0 16 8 8 0 0 0 0-16Z" stroke-width="1.4"/><path d="M3 12h18M12 3c2.5 2.5 2.5 13.5 0 18M12 3c-2.5 2.5-2.5 13.5 0 18" stroke-width="1.3"/></svg></div>
+        <h3>New to the island</h3>
+        <p>Relocating to Maui? I'll be your guide to neighborhoods, schools, and what daily life really costs here — long before you ever sign anything.</p>
+      </article>
+      <article class="svc reveal d1">
+        <span class="num" aria-hidden="true">04</span>
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9l4-2 4 2 4-2 4 2v10" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 19h16M9 19v-5h6v5" stroke-width="1.6"/></svg></div>
+        <h3>Investment &amp; rentals</h3>
+        <p>Eyeing a Maui condo or rental? I'll give you the straight math on returns, the rules that actually apply, and what's genuinely rentable — no rose-colored pro formas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LISTINGS ============ -->
+<section class="cream" id="listings" aria-labelledby="list-h">
+  <div class="wrap">
+    <div class="reveal" style="max-width:52ch">
+      <p class="eyebrow">On Maui's market</p>
+      <h2 class="display" id="list-h">Homes worth knowing about.</h2>
+      <svg class="horizon" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+      <p class="note">Live MLS listings connect here. The cards below reflect Rocky's recent Maui activity — real photos &amp; current inventory drop in once we wire his IDX/MLS feed.</p>
+    </div>
+    <div class="listings">
+      <article class="listing reveal">
+        <!-- LISTING PHOTO TO ADD: real exterior shot, 4:3, swaps in over this vignette. -->
+        <div class="img"><span class="tag">For lease</span>
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="l1sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#143452"/><stop offset="100%" stop-color="#0A1A29"/></linearGradient>
+              <radialGradient id="l1sun" cx="64%" cy="40%" r="42%"><stop offset="0" stop-color="#C8923F" stop-opacity=".5"/><stop offset="100%" stop-color="#C8923F" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#l1sky)"/>
+            <circle cx="256" cy="120" r="120" fill="url(#l1sun)"/>
+            <circle cx="256" cy="112" r="26" fill="#E2B873" opacity=".85"/>
+            <path d="M0 180 L150 70 L230 175 L300 120 L400 180 V300 H0 Z" fill="#16344E"/>
+            <path d="M0 230 Q120 185 240 215 T400 225 V300 H0 Z" fill="#0F2438"/>
+            <path d="M30 188 Q200 150 370 188" fill="none" stroke="#C8923F" stroke-width="1" opacity=".5"/>
+            <g transform="translate(70 196)"><path d="M0 20 L22 2 L44 20 V46 H0 Z" fill="#0A1A29" stroke="#C8923F" stroke-width="1.3"/><rect x="17" y="30" width="10" height="16" fill="#C8923F" opacity=".7"/></g>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="place">Lower Main St</div>
+          <div class="meta">Wailuku · Central Maui</div>
+          <div class="price">$2,500 / mo</div>
+        </div>
+      </article>
+      <article class="listing reveal d1">
+        <!-- LISTING PHOTO TO ADD: real exterior shot, 4:3, swaps in over this vignette. -->
+        <div class="img"><span class="tag sold">Recently sold</span>
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="l2sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15324C"/><stop offset="100%" stop-color="#0A1A29"/></linearGradient>
+              <radialGradient id="l2sun" cx="34%" cy="38%" r="42%"><stop offset="0" stop-color="#C8923F" stop-opacity=".5"/><stop offset="100%" stop-color="#C8923F" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#l2sky)"/>
+            <circle cx="136" cy="108" r="120" fill="url(#l2sun)"/>
+            <circle cx="136" cy="100" r="24" fill="#E2B873" opacity=".85"/>
+            <rect x="0" y="176" width="400" height="3" fill="#C8923F" opacity=".35"/>
+            <path d="M0 180 H400 V300 H0 Z" fill="#0F2438"/>
+            <path d="M0 215 Q200 195 400 215 V300 H0 Z" fill="#0A1A29"/>
+            <g transform="translate(172 150)"><path d="M0 28 L30 4 L60 28 V64 H0 Z" fill="#0A1A29" stroke="#C8923F" stroke-width="1.4"/><rect x="24" y="42" width="12" height="22" fill="#C8923F" opacity=".7"/></g>
+            <g transform="translate(300 118)" stroke="#C8923F" fill="none" stroke-width="1.4" opacity=".8"><path d="M6 70 Q4 30 8 6"/><path d="M8 8 Q-14 0 -26 10"/><path d="M8 8 Q30 0 40 12"/><path d="M8 8 Q-6 -14 -20 -16"/><path d="M8 8 Q22 -14 34 -14"/></g>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="place">Kahului Home</div>
+          <div class="meta">Central Maui · 2024</div>
+          <div class="price">Sold · mid-$900Ks</div>
+        </div>
+      </article>
+      <article class="listing reveal d2">
+        <!-- LISTING PHOTO TO ADD: real exterior shot, 4:3, swaps in over this vignette. -->
+        <div class="img"><span class="tag sold">Recently sold</span>
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="l3sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#143452"/><stop offset="100%" stop-color="#0A1A29"/></linearGradient>
+              <radialGradient id="l3sun" cx="74%" cy="38%" r="42%"><stop offset="0" stop-color="#C8923F" stop-opacity=".5"/><stop offset="100%" stop-color="#C8923F" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="300" fill="url(#l3sky)"/>
+            <circle cx="300" cy="108" r="120" fill="url(#l3sun)"/>
+            <circle cx="300" cy="100" r="24" fill="#E2B873" opacity=".85"/>
+            <path d="M0 200 Q100 150 200 190 T400 170 V300 H0 Z" fill="#16344E"/>
+            <path d="M0 235 Q120 200 240 230 T400 235 V300 H0 Z" fill="#0F2438"/>
+            <path d="M0 265 Q140 240 280 262 T400 262 V300 H0 Z" fill="#0A1A29"/>
+            <path d="M30 198 Q200 165 370 192" fill="none" stroke="#C8923F" stroke-width="1" opacity=".5"/>
+            <g transform="translate(150 178)"><path d="M0 22 L24 3 L48 22 V50 H0 Z" fill="#0A1A29" stroke="#C8923F" stroke-width="1.3"/><rect x="18" y="32" width="11" height="18" fill="#C8923F" opacity=".7"/></g>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="place">Wailuku Residence</div>
+          <div class="meta">Central Maui · 2023</div>
+          <div class="price">Sold · $345K–$950K range</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="navy" id="testimonials" aria-labelledby="test-h">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow on-navy reveal">My promise</p>
+    <h2 class="display reveal" id="test-h">How it goes when we work together.</h2>
+    <svg class="horizon center reveal" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+    <p class="promise-intro reveal">No pressure pitches, no disappearing act. Three things I hold to on every Maui deal — long before there's a review to read.</p>
+    <!-- REAL REVIEWS: as Rocky shares verified Google / Zillow / RateMyAgent reviews, add a
+         testimonial row above this promise grid (real name + town only — never invented quotes). -->
+    <div class="promise-grid">
+      <div class="promise reveal d1"><span class="p-num" aria-hidden="true">One</span><h3>I answer.</h3><p>Call or text and you get me — usually the same day, not a callback queue. You'll always know exactly where your deal stands.</p></div>
+      <div class="promise reveal d2"><span class="p-num" aria-hidden="true">Two</span><h3>I tell you straight.</h3><p>Honest pricing and real talk about a home's flaws, even when it costs me the faster commission. You decide with the full picture.</p></div>
+      <div class="promise reveal d3"><span class="p-num" aria-hidden="true">Three</span><h3>I stay local.</h3><p>Born and based on Maui. I'm still here after closing — for the contractor referral, the next home, the friend you send my way.</p></div>
+    </div>
+    <p class="review-invite reveal">Reviews from Maui clients will live here as they come in.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="cream" id="faq" aria-labelledby="faq-h">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Good to know</p>
+    <h2 class="display" id="faq-h">Questions, answered.</h2>
+    <svg class="horizon center" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+  </div>
+  <div class="wrap">
+    <div class="faq">
+      <details open>
+        <summary>Do you work with both buyers and sellers? <span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes — both. I represent buyers looking for the right home on Maui and sellers who want honest pricing and real marketing. If you're doing both at once, I'll help you line up the timing so you're not stuck between two closings.</div>
+      </details>
+      <details>
+        <summary>Which parts of Maui do you cover? <span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">All of it. I'm based in Wailuku and work island-wide — Kahului, Kīhei, Wailea, Lahaina, Pukalani, Makawao, Hāna and the towns in between. Each area has its own pricing and quirks, and I'll tell you straight which fits what you're after.</div>
+      </details>
+      <details>
+        <summary>I'm buying from off-island — can you help remotely? <span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Absolutely. A lot of my clients start their search from the mainland. I do video walkthroughs, send honest neighborhood breakdowns, and handle the on-island legwork so you're never guessing about a place you haven't stood in yet.</div>
+      </details>
+      <details>
+        <summary>What's the first step to selling my Maui home? <span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">A conversation and a real look at your home — no pressure. I'll walk it with you, give you an honest market price (not an inflated one to win the listing), and lay out exactly what's worth doing before we go live and what isn't.</div>
+      </details>
+      <details>
+        <summary>How do I reach you? <span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Call or text me at <a href="tel:+18082831800" style="color:var(--gold-deep);font-weight:500">(808) 283-1800</a>, or email <a href="mailto:waenagroup@gmail.com" style="color:var(--gold-deep);font-weight:500">waenagroup@gmail.com</a>. I answer my own phone — you'll get me, not a call center.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="navy" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow on-navy">Get in touch</p>
+      <h2 class="display" id="contact-h">Let's find your place on Maui.</h2>
+      <svg class="horizon" viewBox="0 0 130 18" aria-hidden="true"><path d="M2 14 Q65 2 128 14"/></svg>
+      <p>Buying, selling, or just trying to figure out if now's the right time — send a note or call. I'll get back to you fast, with honest answers.</p>
+      <ul class="contact-lines">
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 2-2Z" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <span><span class="lbl">Call or text</span><br><a href="tel:+18082831800">(808) 283-1800</a></span>
+        </li>
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke-width="1.5"/><path d="M4 7l8 6 8-6" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          <span><span class="lbl">Email</span><br><a href="mailto:waenagroup@gmail.com">waenagroup@gmail.com</a></span>
+        </li>
+        <li>
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.2-7-10a7 7 0 0 1 14 0c0 4.8-7 10-7 10Z" stroke-width="1.5"/><circle cx="12" cy="11" r="2.4" stroke-width="1.5"/></svg></span>
+          <span><span class="lbl">Office · Island Wide Realty</span><br><span class="val">1371 Lower Main St., #1, Wailuku, HI 96793</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Netlify-forms ready; also works as a plain mailto fallback if not on Netlify -->
+    <form class="reveal d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" action="#contact">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hp"><label>Don't fill this out: <input name="company" /></label></p>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" />
+      </div>
+      <div class="field">
+        <label for="message">How can I help?</label>
+        <textarea id="message" name="message" required placeholder="Tell me a little about what you're looking for on Maui…"></textarea>
+      </div>
+      <div class="form-foot">
+        <button class="btn btn-gold" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+        <span style="font-size:.74rem;color:var(--ink-muted)">Or just call — I answer my own phone.</span>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- Mobile-only quick-action bar — a phone-specific decision, not a shrunk desktop element -->
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="mb-btn call" href="tel:+18082831800"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 2-2Z" stroke-width="1.6" stroke-linejoin="round"/></svg> Call Rocky</a>
+  <a class="mb-btn email" href="mailto:waenagroup@gmail.com"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke-width="1.6" stroke-linejoin="round"/></svg> Email</a>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="name">Rocky Balala</div>
+      <p>Wailuku-based Maui real estate agent with Island Wide Realty. Buying and selling, island-wide — with straight answers and a local's eye.</p>
+      <div class="eho">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11l8-6 8 6M6 10v9h12v-9" stroke-width="1.4" stroke-linejoin="round"/><path d="M10 19v-4h4v4" stroke-width="1.4"/><path d="M9 7l3-2 3 2" stroke-width="1.2"/></svg>
+        <span>Equal Housing Opportunity · Hawaii R(S) RS-82410</span>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#about">About Rocky</a>
+      <a href="#services">Services</a>
+      <a href="#listings">Listings</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Reach Rocky</h4>
+      <a href="tel:+18082831800">(808) 283-1800</a>
+      <a href="mailto:waenagroup@gmail.com">waenagroup@gmail.com</a>
+      <a href="#contact">Send a message</a>
+      <span style="font-size:.86rem;display:block;margin-top:.4rem;">1371 Lower Main St., #1<br>Wailuku, HI 96793</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="yr">2026</span> Rocky Balala · Island Wide Realty. All rights reserved.</span>
+    <span>Site by <a href="https://frontlinewebdesign.tech" target="_blank" rel="noopener">Frontline Web Designs</a></span>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Header scroll state
+  const header = document.getElementById('siteHeader');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('primaryNav');
+  const toggle = (open) => {
+    nav.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+  menuBtn.addEventListener('click', () => toggle(!nav.classList.contains('open')));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
+
+  // Reveal on scroll + draw the horizon-arc motif as each section arrives
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveals = document.querySelectorAll('.reveal');
+  const horizons = document.querySelectorAll('.horizon');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('in'));
+    horizons.forEach(el => el.classList.add('drawn'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.14, rootMargin:'0px 0px -8% 0px'});
+    reveals.forEach(el => io.observe(el));
+    const ho = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('drawn'); ho.unobserve(e.target); } });
+    }, {threshold:0.55});
+    horizons.forEach(el => ho.observe(el));
+  }
+</script>
+</body>
+</html>
