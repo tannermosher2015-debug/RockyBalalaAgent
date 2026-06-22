@@ -7,3 +7,6 @@ desktop.ini
 
 # Local preview config (lives in the Sessions workspace, not here)
 .claude/
+
+# Archived full-res photo originals (web-optimized versions are committed)
+images/source/

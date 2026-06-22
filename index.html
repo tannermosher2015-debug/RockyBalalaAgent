@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Rocky Balala — Maui Real Estate Agent" />
 <meta property="og:description" content="A Wailuku-based Maui agent who picks up the phone. Buying and selling island-wide with Island Wide Realty." />
-<meta property="og:image" content="https://rockybalala.com/images/og-rocky-balala.jpg" />
+<meta property="og:image" content="https://rockybalala.com/images/rocky-balala.jpg" />
 <meta property="og:url" content="https://rockybalala.com/" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -205,8 +205,7 @@
   .portrait .photo{position:absolute;inset:22px;border-radius:50%;overflow:hidden;
     background:radial-gradient(circle at 50% 30%,var(--navy-2),var(--navy-3));
     display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:var(--shadow);}
-  .portrait .mono{font-family:'Cormorant Garamond',serif;font-size:4.6rem;font-weight:600;color:var(--gold-soft);line-height:1;}
-  .portrait .ph-label{font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-muted);margin-top:.6rem;}
+  .portrait .photo img{width:100%;height:100%;object-fit:cover;object-position:center;}
   .portrait .badge{position:absolute;right:-6px;bottom:14px;width:96px;height:96px;border-radius:50%;
     background:var(--gold);color:#211207;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
     box-shadow:0 16px 34px -14px rgba(200,146,63,.8);transform:rotate(-8deg);}
@@ -218,10 +217,7 @@
   .about-portrait{position:relative;width:min(420px,100%);aspect-ratio:4/5;justify-self:center;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;
     border:1px solid rgba(200,146,63,.4);box-shadow:var(--shadow);
     display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--cream-muted);text-align:center;}
-  .about-portrait .ap-scene{position:absolute;inset:0;width:100%;height:100%;}
-  .about-portrait .ap-seal{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;}
-  .about-portrait .mono{font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--gold-soft);line-height:1;text-shadow:0 6px 24px rgba(10,26,41,.6);}
-  .about-portrait .ap-sub{font-family:'Pinyon Script',cursive;font-size:1.5rem;color:var(--cream-text);margin-top:.2rem;}
+  .about-portrait img{width:100%;height:100%;object-fit:cover;object-position:center;}
   .about p{margin:0 0 1.1em;}
   .about p.muted{color:var(--ink-muted);}
   .creds{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(33,29,23,.12);border:1px solid rgba(33,29,23,.12);border-radius:var(--radius);overflow:hidden;margin-top:2rem;}
@@ -478,13 +474,10 @@
 
     <!-- Agent portrait (motif: gold-ringed circle) -->
     <div class="portrait reveal d2">
-      <!-- HEADSHOT TO ADD: Rocky's professional headshot, ~720×720, square, warm light.
-           Replace the .photo block's monogram with <img alt="Rocky Balala, Maui real estate agent"> -->
       <div class="ring" aria-hidden="true"></div>
       <div class="ring two" aria-hidden="true"></div>
       <div class="photo">
-        <span class="mono" aria-hidden="true">RB</span>
-        <span class="ph-label">Rocky Balala · R(S)</span>
+        <img src="images/rocky-balala-square.jpg" alt="Rocky Balala, Maui real estate agent with Island Wide Realty" width="760" height="760" />
       </div>
       <div class="badge" aria-hidden="true">
         <span class="b1">Maui</span>
@@ -497,34 +490,8 @@
 <!-- ============ ABOUT ============ -->
 <section class="cream about" id="about" aria-labelledby="about-h">
   <div class="wrap about-grid">
-    <div class="about-portrait reveal" aria-hidden="true">
-      <!-- ABOUT PHOTO TO ADD: a relaxed on-location portrait of Rocky (~720×900 portrait);
-           drop in as an <img> filling this frame and remove the .ap-scene/.ap-seal stand-in. -->
-      <svg class="ap-scene" viewBox="0 0 420 525" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="apsky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#13304A"/>
-            <stop offset="60%" stop-color="#0F2438"/>
-            <stop offset="100%" stop-color="#0A1A29"/>
-          </linearGradient>
-          <radialGradient id="apsun" cx="50%" cy="46%" r="34%">
-            <stop offset="0" stop-color="#C8923F" stop-opacity=".5"/>
-            <stop offset="100%" stop-color="#C8923F" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <rect width="420" height="525" fill="url(#apsky)"/>
-        <circle cx="210" cy="250" r="150" fill="url(#apsun)"/>
-        <circle cx="210" cy="232" r="34" fill="#E2B873" opacity=".85"/>
-        <!-- ʻĪao-valley ridgelines -->
-        <path d="M0 300 L150 150 L210 250 L270 150 L420 300 V525 H0 Z" fill="#16344E" opacity=".85"/>
-        <path d="M0 350 Q120 280 210 330 T420 360 V525 H0 Z" fill="#0F2438"/>
-        <path d="M0 420 Q140 360 280 410 T420 430 V525 H0 Z" fill="#0A1A29"/>
-        <path d="M40 312 Q210 250 380 312" fill="none" stroke="#C8923F" stroke-width="1.2" opacity=".5"/>
-      </svg>
-      <span class="ap-seal">
-        <span class="mono">RB</span>
-        <span class="ap-sub">on Maui</span>
-      </span>
+    <div class="about-portrait reveal">
+      <img src="images/rocky-balala.jpg" alt="Rocky Balala, Wailuku-based Maui real estate agent" width="900" height="1130" />
     </div>
     <div class="reveal d1">
       <p class="eyebrow">About Rocky</p>
