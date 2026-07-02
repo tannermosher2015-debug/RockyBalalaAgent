@@ -1,0 +1,4 @@
+# Netlify headers - PITCH BUILD noindex.
+# Remove this X-Robots-Tag rule (and the noindex <meta>) when the site goes live.
+/*
+  X-Robots-Tag: noindex, nofollow

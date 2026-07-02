@@ -1,0 +1,5 @@
+# Rocky Balala - pitch-phase deploy companion.
+# Remove the noindex block (and the <meta name="robots"> in index.html) if this becomes the official site.
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

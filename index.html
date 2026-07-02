@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- PITCH BUILD - not for the live web yet. Keep noindex until the client approves deploy. -->
+<meta name="robots" content="noindex, nofollow" />
 <title>Rocky Balala — Maui Real Estate Agent | Island Wide Realty, Wailuku</title>
 <meta name="description" content="Rocky Balala is a Wailuku-based real estate agent with Island Wide Realty, helping island families and newcomers buy and sell across Maui — Kahului, Kīhei, Lahaina, Wailea and beyond. Licensed R(S) RS-82410." />
 <meta name="theme-color" content="#0F2438" />
@@ -707,7 +709,7 @@
       </ul>
     </div>
 
-    <!-- Netlify-forms ready; also works as a plain mailto fallback if not on Netlify -->
+    <!-- Netlify Forms only (data-netlify); this submits on Netlify only, there is no mailto fallback -->
     <form class="reveal d1" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" action="#contact">
       <input type="hidden" name="form-name" value="contact" />
       <p class="hp"><label>Don't fill this out: <input name="company" /></label></p>
