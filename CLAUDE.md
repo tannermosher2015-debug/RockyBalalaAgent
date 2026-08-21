@@ -8,12 +8,16 @@ it the first time you work in this repo.
 Single-file static HTML/CSS/JS. No framework.
 
 ## Deploy target
-**Hostinger static** (`.htaccess` present on disk).
+**Hostinger, `rockybalala.frontlinewebdesign.tech`**
 
 ## Does a push publish?
-**Probably NO.** Hostinger deploys go through the Hostinger MCP, not a git push
-(see the vault note `deploy-via-hostinger-mcp`). `frontline-website` is the known
-exception. UNCONFIRMED for this repo; verify before assuming either way.
+**NO.** This repo has no deploy webhook and no deploying GitHub Action, so nothing is
+listening for a push. Deploys are manual (Hostinger MCP upload, or a Netlify CLI/drop).
+
+Settled 2026-08-21 by `gh api repos/<owner>/<repo>/hooks` across all 48 retrofitted repos,
+plus a check for a deploying GitHub Action. Control: `publicsafetyfactshawaii`, which is
+documented as auto-deploying, returned the Netlify hook, so the test detects git-linkage
+rather than silently returning empty.
 
 ## Remote
 `git@github.com:tannermosher2015-debug/RockyBalalaAgent.git`, branch `main`.
